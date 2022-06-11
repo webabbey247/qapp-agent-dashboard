@@ -4,7 +4,7 @@ import DashboardLayout from "../../components/Layout/DashboardLayout";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import TransactionList from "../../components/TransactionCards/TransactionList";
 import BankCardGrid from "../../components/BankCard/BankCardGrid";
-import { CustomDiv, GeneralLgText, GeneralMdText, GeneralSmText } from "../../GlobalCss";
+import { CustomDiv, GeneralLgText, GeneralSmText } from "../../GlobalCss";
 import { FormInput, FormInputIcon} from "../../assets/styles/FormCss";
 import { Search } from "react-feather";
 
@@ -27,7 +27,7 @@ const Homepage = () => {
 
           <CustomDiv display="flex" flexDirection="row" maxWidth="50%" flex="0 0 50%" position="relative">
           <FormInput name="confirmPassword" type="text" placeholder="Search"  />
-          <FormInputIcon><Search height="30px" width="30px" color='#fff' /></FormInputIcon>
+          <FormInputIcon><Search height="25px" width="25x" color='#fff' /></FormInputIcon>
           </CustomDiv>
 
         </HomepageSearchHeader>
