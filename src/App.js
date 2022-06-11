@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { GlobalStyle } from "./GlobalCss";
+
+// @import Auth Pages
+import { Login, Register, ForgetPassword, NewPassword } from "./pages/Auth";
+
+// @import Dashboard Pages
+import Homepage from "./pages/Dashboard/Homepage";
+import MyBanks from "./pages/Dashboard/MyBanks";
+import MyBankInfo from "./pages/Dashboard/MyBankInfo";
+
+
+import { NoMatch} from "./pages";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Routes>
+      <Route exact path='*' element={<NoMatch />} />
+        <Route exact path='/' element={<Login />} />
+        <Route exact path='/auth/register' element={<Register />} />
+        <Route exact path='/auth/forget-password' element={<ForgetPassword />} />
+        <Route exact path='/auth/new-password' element={<NewPassword />} />
+
+        <Route exact path='/dashboard' element={<Homepage />} />
+        <Route exact path='/dashboard/banks' element={<MyBanks />} />
+        <Route exact path='/dashboard/banks/oceanic-bank' element={<MyBankInfo />} />
+ 
+      </Routes>
+    </Router>
   );
 }
 
