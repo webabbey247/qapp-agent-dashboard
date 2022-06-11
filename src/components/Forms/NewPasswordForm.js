@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Eye, EyeOff } from 'react-feather';
 import { ContentRow, ContentFullColumn, CustomDiv, DefaultButton } from '../../GlobalCss';
 import {
