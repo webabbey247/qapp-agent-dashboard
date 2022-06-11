@@ -23,5 +23,12 @@
 
 .css-1rhbuit-multiValue {
     padding: 0.5rem 1rem !important;
-    width: 130px !important;
+    width: 133px !important;
+    background: #67818E !important;
+    color: #F4F4F4 !important;
+    border-radius: 8px !important;
+  }
+
+  .css-12jo7m5 {
+    color: #F4F4F4 !important;
   }
