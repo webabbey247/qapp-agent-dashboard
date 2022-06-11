@@ -1,9 +1,9 @@
 import React from "react";
 import AuthLayout from "../../components/Layout/AuthLayout";
 import { LoginForm } from "../../components/Forms";
-import { agentLogo, dummyFlag} from "../../assets";
+import { agentLogo} from "../../assets";
 import { GeneralMdText, GeneralSmText } from "../../GlobalCss";
-import { AuthSection, AuthLogoContainer, AuthLogo, AuthContainer, AuthTopContainer, AuthTopLTR, AuthTopRTL, FlagContainer, FlagImg, AuthBottomContainer } from "../../assets/styles/AuthCss";
+import { AuthSection, AuthLogoContainer, AuthLogo, AuthContainer, AuthTopContainer, AuthTopLTR, AuthBottomContainer } from "../../assets/styles/AuthCss";
 
 
 const Login = () => {

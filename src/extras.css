@@ -1,0 +1,16 @@
+.swiper-slide {
+    width: 208px !important;
+    height: 312px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background: #E46F24 !important;
+    padding: 1.6rem !important;
+    border-radius: 50% !important;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 15px;
+    color: #ffffff;
+}

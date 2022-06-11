@@ -22,7 +22,7 @@ const Homepage = () => {
         <HomepageSearchHeader>
           <CustomDiv display="flex" justifyContent="space-between" flexDirection="column" maxWidth="50%" flex="0 0 50%">
             <GeneralLgText fontSize="34px" color="#F7F7F7" lineHeight="34px" fontWeight="700" padding="" margin="" textAlign="left" textTransform="Capitalize">Good Morning</GeneralLgText>
-            <GeneralSmText fontSize="20px" color="#F7F7F7" lineHeight="26px" margin="10px 0" opacity="0.8" fontWeight="400">Welcome, Michael</GeneralSmText>
+            <GeneralSmText fontSize="20px" color="#F7F7F7" lineHeight="26px" margin="10px 0" opacity="0.8" fontWeight="400" textTransform="capitalize">Welcome, Michael</GeneralSmText>
           </CustomDiv>
 
           <CustomDiv display="flex" flexDirection="row" maxWidth="50%" flex="0 0 50%" position="relative">

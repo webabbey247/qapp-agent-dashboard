@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Eye, EyeOff } from 'react-feather';
-import { ContentRow, ContentFullColumn, CustomDiv, DefaultButton, GeneralSmText } from '../../GlobalCss';
+import { ContentRow, ContentFullColumn, CustomDiv, DefaultButton } from '../../GlobalCss';
 import {
     ContentForm,
     FormInput,
@@ -9,8 +9,6 @@ import {
 } from '../../assets/styles/FormCss';
 
 const NewPasswordForm = () => {
-    const navigate = useNavigate();
-    const [loading, setLoading] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
         return (
@@ -36,7 +34,7 @@ const NewPasswordForm = () => {
 
                         <ContentFullColumn>
                             <CustomDiv display="flex" flexDirection="row" justifyContent="center" width="100%">
-                            <DefaultButton background="rgba(228, 111, 36, 0.6)" border="rgba(228, 111, 36, 0.6);">{loading ? "Loading...." : "Reset Password"}</DefaultButton>
+                            <DefaultButton background="rgba(228, 111, 36, 0.6)" border="rgba(228, 111, 36, 0.6);">Reset Password</DefaultButton>
                             </CustomDiv>
                         </ContentFullColumn>
                     </ContentRow>

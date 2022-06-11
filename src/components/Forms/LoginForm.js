@@ -8,7 +8,6 @@ import {
 } from '../../assets/styles/FormCss';
 
 const LoginForm = () => {
-    const [loading, setLoading] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
 
     return (
@@ -41,7 +40,7 @@ const LoginForm = () => {
                     </ContentFullColumn>
                     <ContentFullColumn>
                         <CustomDiv display="flex" flexDirection="row" justifyContent="center" width="100%">
-                            <DefaultButton background="rgba(228, 111, 36, 0.6)" border="rgba(228, 111, 36, 0.6);">{loading ? "Loading" : "Login"}</DefaultButton>
+                            <DefaultButton background="rgba(228, 111, 36, 0.6)" border="rgba(228, 111, 36, 0.6);">Login</DefaultButton>
                         </CustomDiv>
                     </ContentFullColumn>
                     <ContentFullColumn>
